@@ -5042,13 +5042,15 @@ function listBigBoard( $option , $type=0){
 			 */
 			//$rows[$key]->bid_next = -1;
 			echo $rowBB->title."Jai".$key;
+			/* Jai02012013
 			if($rowBB->bidtype == "pp")
 				unset($rows[$key-1]);
 				//$rows = array_slice($rows, $key-1);
 			elseif($rows[$key-1]->bidtype == "pp")
 				unset($rows[$key]);
 				//$rows = array_slice($rows, $key);
-			//array_splice($rows, $key-1, 0);
+			*/
+			array_splice($rows, $key-1, 0);
 			/*
 			 * JaiENDO
 			 */
