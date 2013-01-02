@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Auctions Mails</name>
+  <author>The Factory</author>
+  <version>2.0</version>
+  <description>Definition for the Auctions Mails</description>
+  <reference>
+  	<table name="bid_mails">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="textarea" name="content" translate="1" >Content</field>
+  		<field type="titletext" name="subject" translate="1" >Subject</field>
+  	</table>
+  </reference>
+</joomfish>

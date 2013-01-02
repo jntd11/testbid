@@ -1,0 +1,113 @@
+/*         MESSAGES          */
+.bidmessage {
+    font-size: 12px;
+    color:green;
+}
+.bidtitle{
+    font-weight:bolder;
+    font-size:11px;
+}
+/*         END MESSAGES */
+
+/*         BUTTONS   */
+
+.back_button{
+	border-top: 1px solid #50546B;
+	border-bottom: 1px solid #50546B;
+	border-right: 1px solid #50546B;
+	border-left: 1px solid #50546B;
+	color: #50546B;
+	text-align: center;
+	background: #EFEFEF;
+	font-size: 12px;
+	padding: 2px 2px 2px 2px;
+	font-weight:bold;
+}
+
+/*         TABBED DISPLAY   */
+.dynamic-tab-pane-control.tab-pane {
+	position:	relative;
+	/*width:		100%;		 width needed weird IE bug */
+	/*margin-right:	-2px;	 to make room for the shadow */
+}
+.dynamic-tab-pane-control .tab-row .tab {
+	width: 102px;
+	height: 30px;
+	background-image: url( "../images/tab.png" );
+	position: relative;
+	top: 0;
+	display: inline;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 1px -1px -10px 0px;
+	padding-top: 5px;
+	border: 0;
+	z-index: 1;
+	font: 11px Arial,Helvetica,sans-serif;
+	white-space: nowrap;
+	text-align: center;
+}
+.dynamic-tab-pane-control .tab-row .tab.selected {
+	width: 124px !important;
+	height: 30px !important;
+	background-image:	url( "../images/tab_active.png" ) !important;
+	background-repeat: no-repeat;
+	border-bottom-width:	0;
+	z-index: 3;
+	margin: 1px -1px -10px 0px;
+	padding-top: 5px;
+	top: -2px;
+	font: 11px Arial,Helvetica,sans-serif;
+
+}
+
+.dynamic-tab-pane-control .tab-row .tab a {
+	font:	12px Arial,Helvetica,sans-serif;
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+}
+.dynamic-tab-pane-control .tab-row .tab.hover {
+	font:	12px Tahoma, Helvetica, sans-serif;
+	width: 102px;
+	height: 30px;
+	background-image:	url( "../images/tab_hover.png" );
+	background-repeat: no-repeat;
+}
+.dynamic-tab-pane-control .tab-row .tab.selected a{
+	color: #FFFFFF;
+}
+.dynamic-tab-pane-control .tab-page {
+
+	border: 1px solid rgb( 175, 192, 212 );
+	background: rgb( 252, 252, 254 );
+	z-index: 2;
+	position: relative;
+	top: -2px;
+	font: 11px Arial,Helvetica,sans-serif;
+	color: #333;
+
+	/*244, 243, 238*/
+	/* 145, 155, 156*/
+	padding:	5px;
+	width: 97%;  /* stupid stupid stupid IE!!! */
+	float: left;
+
+}
+.dynamic-tab-pane-control .tab-row {
+	z-index: 1;
+	white-space: nowrap;
+}
+
+/*     AUCTION MODULE CSS  */
+.module_title{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.table_module_2{
+	background-color:#C8C8C8;
+}
+.table_module_1{
+	background-color:#ffffff;
+}

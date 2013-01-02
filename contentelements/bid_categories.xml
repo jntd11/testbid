@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Auction Categories</name>
+  <author>The Factory</author>
+  <version>2.0</version>
+  <description>Definition for the Auction categories</description>
+  <reference>
+  	<table name="bid_categories">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="catname" translate="1" >Name</field>
+  		<field type="id" name="parent" translate="0">Parent</field>
+  	</table>
+  </reference>
+</joomfish>

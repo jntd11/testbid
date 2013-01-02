@@ -1,0 +1,7 @@
+SELECT count(b.id) FROM jos_proxyplus_tickets ppt JOIN jos_proxyplus_bids b ON (ppt.id = b.ticket_id) JOIN jos_bids bids ON (b.auction_id = bids.id_offer AND ppt.userid = bids.userid) JOIN (SELECT * FROM `jos_bids` a WHERE (id_offer, bid_price) in (select id_offer, max(bid_price) from `jos_bids` group by id_offer)) manual ON (bids.id = manual.id) WHERE ppt.id = 1 AND b.outbid = 0 AND b.is_revised = 0 AND b.discontinue = 0 ORDER BY b.priority
+
+INSERT INTO `jos_bids` (`id`, `id_offer`, `userid`, `id_proxy`, `initial_bid`, `bid_price`, `payment`, `cancel`, `accept`, `modified`, `bidtype`) VALUES
+(1, 3, 494, 0, 3000, 4500, 0, 0, 0, '2012-12-16 22:21:35', 'pp'),
+(5, 3, 497, 0, 4000, 4250, 0, 0, 0, '2012-12-16 22:20:55', 'm'),
+(6, 2, 497, 0, 3000, 3000, 0, 0, 0, '2012-12-16 22:19:10', 'm'),
+(7, 1, 497, 0, 2200, 2200, 0, 0, 0, '2012-12-16 22:19:46', 'm');

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Auctions Rate</name>
+  <author>The Factory</author>
+  <version>2.0</version>
+  <description>Definition for the Auctions Tags</description>
+  <reference>
+  	<table name="bid_rate">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="message" translate="1" >Message</field>
+  	</table>
+  </reference>
+</joomfish>
